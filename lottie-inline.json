@@ -1,0 +1,17 @@
+{
+  "name": "lottie-inline",
+  "author": "peterroe",
+  "version": "0.1.1",
+  "author_email": "peterroe@163.com",
+  "url": "https://github.com/peterroe/lottie-inline",
+  "license": "MIT",
+  "description": "A tool to inline images in Lottie JSON files",
+  "classifiers": [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+  ],
+  "console_scripts": [
+    "lottie-inline=lottie_inline:main"
+  ]
+}
