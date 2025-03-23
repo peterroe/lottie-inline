@@ -32,10 +32,10 @@ def process_lottie_json(input_json_path, output_json_path):
                 if os.path.exists(image_path):
                     # Convert image to base64
                     base64_data = convert_image_to_base64(image_path)
-                    
+                    extension = os.path.splitext(image_path)[1]
                     # Replace path with base64 data
                     asset['u'] = ""
-                    asset['p'] = "data:image/png;base64," + base64_data
+                    asset['p'] = "data:image/" + extension + ";base64," + base64_data
                     # Set the asset to be embedded
                     asset['e'] = 1
                 else:
