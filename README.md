@@ -9,8 +9,16 @@ $ pip install lottie-inline
 ```
 ## Usage
 
+Basic usage:
+
 ```bash
 $ lottie-inline /path/to/input-lottie-file.json /path/to/output-lottie-file.json
+```
+
+Limit the size of the images to be inlined to 100KB:
+
+```bash
+$ lottie-inline /path/to/input-lottie-file.json /path/to/output-lottie-file.json --max-size=100
 ```
 
 ## Details
